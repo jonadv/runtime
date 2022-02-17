@@ -108,6 +108,8 @@ Applications can enable the invariant mode by either of the following:
     </PropertyGroup>
     ```
 
+Note: This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior. Therefor consider adding a  [Directory.Build.Props](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022#directorybuildprops-and-directorybuildtargets)-file in the main directory with above setting in between `<Project>` tags.
+
 2. in `runtimeconfig.json` file:
 
     ```json
